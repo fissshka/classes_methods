@@ -21,7 +21,9 @@ end
 text_max_num_str ('Hello world')
 
 def matching_chars_string(main_string, compare_string)
-  #There are two strings. Find number of first chars from first string matching first chars of the second string. Consider two cases:
+  #There are two strings.
+  # Find number of first chars from first string matching first chars of the second string.
+  # Consider two cases:
   #strings are definitely different
   #strings can completely match
   st1 = main_string.chars
@@ -33,7 +35,8 @@ end
 matching_chars_string('Today is rainy day', 'Tomorrow will be great')
 
 def even_odd_arr(arr)
-  #There is an array of integers. First puts elements with even indexes and then with odd indexes
+  #There is an array of integers.
+  # First puts elements with even indexes and then with odd indexes
   even_arr = []
   odd_arr = []
   even_index = arr.find_all{|i| i%2==0}
@@ -45,13 +48,16 @@ end
 even_odd_arr([1,2,3,4,5,6,7,8,9,10])
 
 def arr_last_index(ary)
-  #There is an array of integers (ary). Puts the index of the last element where ary[0]<ary[i]<ary[-1]
+  #There is an array of integers (ary).
+  # Puts the index of the last element where ary[0]<ary[i]<ary[-1]
   puts ary.index((ary.each_index{|i| (ary[0]<i)&&(i<ary[-1])}).last)
 end
 arr_last_index([1,2,3,4,5,6,7,8,-8,-9,-10, -12, -13])
 
 def modify_arr(ary)
-    #There is an array of integers (ary). Modify it with adding ary[0] (first element of the array) to each even number. Don't do it for first and last elements
+    #There is an array of integers (ary).
+    # Modify it with adding ary[0] (first element of the array) to each even number.
+    # Don't do it for first and last elements
       elem=100
       puts ary.unshift(elem)
       if (ary.each_index{|i| (i%2==0)&&(i!=ary[0])&&(i!=ary[-1])})

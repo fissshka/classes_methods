@@ -5,7 +5,6 @@ module IssueCreation
     include MainMethods
     def test_issue_bug
       bug_creation
-
       @wait.until{@driver.find_element(:class, 'issue').displayed?}
       expected = @bug_subject
       actual = @driver.find_element(:class, 'issue').find_element(:class, 'subject').text
@@ -14,7 +13,6 @@ module IssueCreation
 
     def bug_creation
       subproj_open
-
       @wait.until{@driver.find_element(:id, 'main-menu').displayed?}
       @driver.find_element(:id, 'main-menu').find_element(:class, 'new-issue').click
       @wait.until{@driver.find_element(:id, 'issue_tracker_id').displayed?}

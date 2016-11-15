@@ -1,10 +1,36 @@
+#2. add to your solution next test
+#   2.1 create project
+#   2.2 make a random action: create or not a new bug issue
+#   2.3 open project page,
+#   2.4 open issues tab
+#   2.5 if there is a bug present then add self to watchers
+#   2.6 if no then create a new bug issue and then add self to watchers
+#   2.7 Verify that there is a bug issue and that current user is a watcher
+
+
 require 'selenium-webdriver'
 require 'test/unit'
-#require_relative 'main_methods.rb'
-#require_relative 'issues.rb'
+require_relative 'first_test'
+
+#require_relative 'issues'
 
 class FirstTest < Test::Unit::TestCase
+def rand_actions
+cases = rand(2)
+end
+def test_bug_exists
+end
+def case_when_bug_exists
+  subproj_open
 
+
+end
+def test_issue_tab
+
+end
+def issue_tab
+
+end
 
 #action = [pos, neg]
 #action.sample
